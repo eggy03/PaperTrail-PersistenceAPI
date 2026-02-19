@@ -1,8 +1,5 @@
 # PaperTrail PersistenceAPI
-A CRUD API for the PaperTrail Bot
-
-## Documentation
-[Apidog](https://papertrail.apidog.io/)
+A CRUD API for the PaperTrail Bot in Spring Framework 6
 
 # Self-Hosting Guide
 > [!IMPORTANT]
@@ -11,10 +8,10 @@ A CRUD API for the PaperTrail Bot
 > It is recommended that you deploy this service before deploying the [bot](https://github.com/Egg-03/PaperTrailBot?tab=readme-ov-file#self-hosting-guide) itself since the bot relies on the URL of this service to communicate. This service is only required for PaperTrail versions 2.0.0 and above.
 >
 > This is not a public API and should not be publicly exposed and should be accessible only by the services within the local network. If deploying on platforms like Northflank, Render, or Railway, ensure this service is not exposed externally and is only accessible to the bot service.
-> 
-> A pre-hosted instance with it's services pre-deployed and configured, is also available if you wish to not opt for self-deployment: https://discord.com/discovery/applications/1381658412550590475
 >
-> Just invite to your guild and configure it from there.
+> The API is currently in maintenance mode. Existing bugs will be fixed, dependency updates will be provided
+> but large new features will likely not be added.
+
 
 The following guide shows how to set up the API service
 
@@ -44,7 +41,7 @@ Supported JDBC Classnames
 
 ### Step 2: Deployment Options
 
-Fork this repository to your GitHub account, connect it to your preferred cloud platform, and configure your environment variables in the platform. Some paltform services may also support adding secrets directly from your `.env` file.
+Fork this repository to your GitHub account, connect it to your preferred cloud platform, and configure your environment variables in the platform. Some paltform services may also support adding secrets directly from your `.env` file. You may also directly link this repository to your preferred cloud platform or clone it if you want the service to run locally.
 
 #### Cloud Platforms with GitHub + Docker Support
 - These can auto-deploy using the included `Dockerfile`
